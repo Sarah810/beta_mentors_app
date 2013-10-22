@@ -1,4 +1,9 @@
 BetaMentorsApp::Application.routes.draw do
+  match '/about', to:  'main_pages#about', via: 'get'
+  match '/contact', to:  'main_pages#contact', via: 'get'
+
+  root 'main_pages#home'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
