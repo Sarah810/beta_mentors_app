@@ -1,5 +1,8 @@
 BetaMentorsApp::Application.routes.draw do
-  get "users/new"
+  
+  resources :users
+  match '/signup',  to: 'users#new', via: 'get'
+
   match '/about', to:  'main_pages#about', via: 'get'
   match '/contact', to:  'main_pages#contact', via: 'get'
 
