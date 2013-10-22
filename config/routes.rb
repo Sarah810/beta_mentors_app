@@ -1,4 +1,5 @@
 BetaMentorsApp::Application.routes.draw do
+  get "users/new"
   match '/about', to:  'main_pages#about', via: 'get'
   match '/contact', to:  'main_pages#contact', via: 'get'
 
