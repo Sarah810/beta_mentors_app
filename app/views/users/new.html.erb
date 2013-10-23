@@ -13,13 +13,11 @@
       <%= f.label :email %>
       <%= f.text_field :email %>
 
-      <%= f.label :language %>
-
-      <%= radio_button_tag(:language, "Chinese") %>
-      <%= label_tag(:language_Chinese, "Chinese") %>
-      <%= radio_button_tag(:language, "English") %>
-      <%= label_tag(:language_English, "English") %>
-      
+      <%= f.label :language, "Language Preference" %>
+      <%= f.select :language, User::PREFER_LANGUAGE_TYPES,
+                   :prompt => "Please select one.",
+                   :value => @user.language %>
+        
       <%= f.label :password %>
       <%= f.password_field :password %>
 
