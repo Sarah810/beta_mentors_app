@@ -14,8 +14,12 @@
       <%= f.text_field :email %>
 
       <%= f.label :language %>
-      <%= f.text_field :language %>
 
+      <%= radio_button_tag(:language, "Chinese") %>
+      <%= label_tag(:language_Chinese, "Chinese") %>
+      <%= radio_button_tag(:language, "English") %>
+      <%= label_tag(:language_English, "English") %>
+      
       <%= f.label :password %>
       <%= f.password_field :password %>
 
