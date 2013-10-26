@@ -9,6 +9,9 @@ gem 'bootstrap-sass', '2.3.2.0'
 # Has Secure Password
 gem 'bcrypt-ruby', '3.0.1'
 
+# Abilities for Different types of Users
+gem "cancan"
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3', '1.3.8'

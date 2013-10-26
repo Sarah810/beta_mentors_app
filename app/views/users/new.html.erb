@@ -17,12 +17,20 @@
       <%= f.select :language, User::PREFER_LANGUAGE_TYPES,
                    :prompt => "Please select one.",
                    :value => @user.language %>
+
+      <%= f.label :school, "Dreamed School" %>
+      <%= f.text_field :school %>
         
       <%= f.label :password %>
       <%= f.password_field :password %>
 
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
+
+      <%= f.label :role, "Role (will be hidden)" %>
+      <%= f.select :role, User::ROLE_TYPES,
+                   :prompt => "Please select one.",
+                   :value => @user.role %>
 
       <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
     <% end %>
