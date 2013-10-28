@@ -17,10 +17,7 @@
       <%= f.select :language, User::PREFER_LANGUAGE_TYPES,
                    :prompt => "Please select one.",
                    :value => @user.language %>
-
-      <%= f.label :school, "Dreamed School" %>
-      <%= f.text_field :school %>
-        
+                           
       <%= f.label :password %>
       <%= f.password_field :password %>
 

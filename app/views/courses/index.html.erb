@@ -1,11 +1,11 @@
 <h1>Listing Courses</h1>
 
 <% @courses.each do |course| %>
-<h2> <%= course.name %></h2>
-<ul>
-	<li> Details: <%= course.details %></li>
-	<li> Fee: $<%= course.fee %></li>
-</ul>
+	<h2> <%= course.name %></h2>
+	<ul>
+		<li> Details: <%= course.details %></li>
+		<li> Fee: $<%= course.fee %></li>
+	</ul>
 <% end %>
 
 <%= link_to 'New Course', new_course_path %>

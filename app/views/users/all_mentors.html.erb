@@ -1,0 +1,11 @@
+<% provide(:title, 'All Mentors') %>
+
+<h1>Our Team!</h1>
+
+<% @mentors.each do |mentor| %>
+	<h2> <%= mentor.name %></h2>
+	<ul>
+		<li> Email: <%= mentor.email %>
+		<li> Language Preference: <%= mentor.language %></li>
+	</ul>
+<% end %>

@@ -18,6 +18,10 @@ class UsersController < ApplicationController
   	@user = User.find(params[:id])
   end
 
+  def all_mentors
+    @mentors = User.where("Role = 'Mentor'")
+  end
+
   private
 
     def user_params
