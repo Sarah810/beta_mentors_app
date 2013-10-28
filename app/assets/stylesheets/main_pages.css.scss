@@ -1,3 +1,43 @@
 // Place all the styles related to the MainPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// Just a comment
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+header, section, footer, aside, nav, article, hgroup {
+	display:block;
+}
+body{
+	text-align:left;
+}
+#big_wrapper{
+	border: 1px solid black;
+	width: 1000px; /* or 80%*/
+	margin: 5px auto;
+	text-align: left;
+}
+#top_header{
+	border: 1px solid blue;
+	padding: 5px;
+}
+#main_section{
+	float: left;
+	width: 450px;
+	margin: 5px; /* 720px, 280 left */
+}
+#news{
+	float: right;
+	width:  220px;
+	margin: 20px 0px;
+	padding: 30px;
+	background: #66CCCC;
+}
+article {
+	background: #FFFBCC;
+	border: 1px solid red;
+	padding: 20px;
+	margin-bottom: 15px; 
+}
