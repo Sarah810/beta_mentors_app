@@ -5,6 +5,7 @@ BetaMentorsApp::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
 
+  match '/all_mentees', to: 'users#all_mentees',  via: 'get'
   match '/all_mentors', to: 'users#all_mentors',  via: 'get'
   match '/signup',      to: 'users#new',          via: 'get'
   match '/signin',      to: 'sessions#new',       via: 'get'

@@ -1,0 +1,11 @@
+<% provide(:title, 'All Mentees') %>
+
+<h1>Our Users!</h1>
+
+<% @mentees.each do |mentee| %>
+	<h2> <%= mentee.name %></h2>
+	<ul>
+		<li> Email: <%= mentee.email %>
+		<li> Language Preference: <%= mentee.language %></li>
+	</ul>
+<% end %>
