@@ -6,7 +6,9 @@
         <ul class="nav pull-right">
           <li><%= link_to "Home",     root_path %></li>
           <li><%= link_to "Mentors", all_mentors_path %></li>
-          <li><%= link_to "Mentees", all_mentees_path %></li>
+          <% if signed_in? && current_user.role == "Admin" %>
+            <li><%= link_to "Mentees", all_mentees_path %></li>
+          <% end %>
           <li><%= link_to "Courses", courses_path %></li>
 
           <% if signed_in? %>

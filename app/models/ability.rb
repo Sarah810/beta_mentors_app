@@ -6,7 +6,9 @@ class Ability
     
     if user.role? == :admin
       can :manage, :all
-    else
+    elsif user.role? == :mentor
+      can :read, :all
+    else # mentee
       can :read, :all
     end
   end
